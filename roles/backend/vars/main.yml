@@ -1,0 +1,4 @@
+login_user: root
+login_password: ExpenseApp@1
+login_host: db.devops91.cloud
+DB_HOST: db.devops91.cloud
