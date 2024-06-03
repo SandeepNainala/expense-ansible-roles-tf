@@ -1,5 +1,8 @@
-- name: configure DB server
+- name: "configure {{ component }} server"
+  hosts: all
+  connection: local
+  vars_files:
+  - "variables-{{ env }}.yaml"
   become: yes
-  hosts: db
   roles:
-  - db
+  - "{{ component }}"
